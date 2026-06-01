@@ -3,12 +3,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="app.Views.AdminView"
+             x:Class="app.Views.ManagerView"
              xmlns:vm="using:app.ViewModels"
-             x:DataType="vm:AdminViewModel">
-
-
-
+             x:DataType="vm:ManagerViewModel">
+  
     <Grid RowDefinitions="60, *">
         <StackPanel Grid.Row="0" Margin="10" Orientation="Horizontal" Spacing="10">
 
@@ -99,9 +97,6 @@
 
                                     </StackPanel>
 
-
-
-
                                 </Border>
 
                                 <Border Grid.Column="2"
@@ -126,6 +121,5 @@
 
 
     </Grid>
-
 
 </UserControl>

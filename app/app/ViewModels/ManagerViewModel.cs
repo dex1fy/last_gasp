@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace app.ViewModels
 {
-    public partial class AdminViewModel : ViewModelBase
+    public partial class ManagerViewModel : ViewModelBase
     {
         [ObservableProperty] int selectedDiscountFilter = -1;
 
@@ -22,7 +22,7 @@ namespace app.ViewModels
         .Include(p => p.Category)
         .ToList();
 
-        
+
         public List<Product> Products0 => db.Products
         .Include(p => p.ProductType)
         .Include(p => p.Unit)
@@ -34,6 +34,9 @@ namespace app.ViewModels
         [ObservableProperty] string textFind;
         public List<Product> Sale => db.Products.ToList();
 
+
+
+
         public void BackAuth()
         {
             MainWindowViewModel.Instance.PageSwitcher = new AuthViewModel();
@@ -44,7 +47,7 @@ namespace app.ViewModels
             switch (sort)
             {
                 case 1:
-                    Products = Products.OrderBy(x=> x.Price).ToList();
+                    Products = Products.OrderBy(x => x.Price).ToList();
                     break;
                 case 2:
                     Products = Products.OrderByDescending(x => x.Price).ToList();
@@ -68,12 +71,12 @@ namespace app.ViewModels
         partial void OnTextFindChanged(string value)
         {
             Products = Products0;
-            Products = Products.Where(x => 
+            Products = Products.Where(x =>
             x.ProductType.Name.Contains(value) ||
             x.Manufacturer.Name.Contains(value) ||
             x.Category.Name.Contains(value) ||
             x.Description.Contains(value)
-            ).ToList(); 
+            ).ToList();
         }
 
         partial void OnSelectedDiscountFilterChanged(int value)
@@ -100,6 +103,6 @@ namespace app.ViewModels
                     break;
             }
         }
+
     }
 }
-

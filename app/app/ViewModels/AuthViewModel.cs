@@ -23,7 +23,19 @@ namespace app.ViewModels
             }
             else
             {
-                MainWindowViewModel.Instance.PageSwitcher = new AdminViewModel();
+                switch(MainWindowViewModel.Instance.currentUser.RoleId)
+                {
+                    case 1: 
+                        MainWindowViewModel.Instance.PageSwitcher = new AdminViewModel();
+                        break;
+                    case 2:
+                        MainWindowViewModel.Instance.PageSwitcher = new ManagerViewModel();
+                        break;
+                    case 3:
+                        MainWindowViewModel.Instance.PageSwitcher= new UserViewModel();
+                        break;
+                }
+                
 
             }
 
@@ -32,7 +44,7 @@ namespace app.ViewModels
         public void Guest ()
         {
             
-                MainWindowViewModel.Instance.PageSwitcher = new AdminViewModel();
+                MainWindowViewModel.Instance.PageSwitcher = new UserViewModel();
 
         }
 
