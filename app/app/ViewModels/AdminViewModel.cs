@@ -1,5 +1,6 @@
 ﻿using app.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -22,7 +23,7 @@ namespace app.ViewModels
         .Include(p => p.Category)
         .ToList();
 
-        
+
         public List<Product> Products0 => db.Products
         .Include(p => p.ProductType)
         .Include(p => p.Unit)
@@ -44,7 +45,7 @@ namespace app.ViewModels
             switch (sort)
             {
                 case 1:
-                    Products = Products.OrderBy(x=> x.Price).ToList();
+                    Products = Products.OrderBy(x => x.Price).ToList();
                     break;
                 case 2:
                     Products = Products.OrderByDescending(x => x.Price).ToList();
@@ -68,12 +69,12 @@ namespace app.ViewModels
         partial void OnTextFindChanged(string value)
         {
             Products = Products0;
-            Products = Products.Where(x => 
+            Products = Products.Where(x =>
             x.ProductType.Name.Contains(value) ||
             x.Manufacturer.Name.Contains(value) ||
             x.Category.Name.Contains(value) ||
             x.Description.Contains(value)
-            ).ToList(); 
+            ).ToList();
         }
 
         partial void OnSelectedDiscountFilterChanged(int value)
@@ -99,6 +100,31 @@ namespace app.ViewModels
                         .ToList();
                     break;
             }
+        }
+
+        public void CreateProduct()
+        {
+            MainWindowViewModel.Instance.PageSwitcher = new CreateViewModel();
+        }
+
+
+
+        [RelayCommand]
+        public void Delete(Product product)
+        {
+            if (product == null)
+                return;
+
+            db.Products.Remove(product);
+            db.SaveChanges();
+
+            Products = db.Products
+                .Include(p => p.ProductType)
+                .Include(p => p.Unit)
+                .Include(p => p.Supplier)
+                .Include(p => p.Manufacturer)
+                .Include(p => p.Category)
+                .ToList();
         }
     }
 }

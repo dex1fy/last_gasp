@@ -14,22 +14,22 @@
 
             <Button Content="Назад" Command="{Binding BackAuth}" Background="#00FA9A"> </Button>
 
-            <TextBox Text="{Binding TextFind}" 
-                     Watermark="Поиск" Width="600" 
-                     Height="30" Margin="10" 
-                     BorderBrush="#00FA9A"> 
+            <TextBox Text="{Binding TextFind}"
+                     Watermark="Поиск" Width="600"
+                     Height="30" Margin="10"
+                     BorderBrush="#00FA9A">
             </TextBox>
 
 
             <ComboBox PlaceholderText="По цене" VerticalAlignment="Center">
-                <RadioButton Content="По возрастанию" 
+                <RadioButton Content="По возрастанию"
                              Command="{Binding PriceSort}"
                              CommandParameter="1">
                 </RadioButton>
 
                 <RadioButton Content="По убыванию"
                              Command="{Binding PriceSort}"
-                             CommandParameter="2"> 
+                             CommandParameter="2">
                 </RadioButton>
             </ComboBox>
 
@@ -50,10 +50,12 @@
 
             </ComboBox>
 
+            <Button Content="Создать" Background="#00FA9A" Command="{Binding CreateProduct}"></Button>
+
         </StackPanel>
 
         <ScrollViewer Grid.Row="1">
-            <ItemsControl ItemsSource="{Binding Products}">
+            <ItemsControl ItemsSource="{Binding Products}" Name="ProductsList">
 
                 <ItemsControl.ItemTemplate>
 
@@ -96,6 +98,9 @@
                                         <TextBlock Text="{Binding Unit.Name, StringFormat = Единица измерения: {0}}"> </TextBlock>
                                         <TextBlock Text="{Binding StockQuantity, StringFormat = Остаток: {0}}"> </TextBlock>
 
+                                        <Button Content="Удалить"
+                                                Command="{Binding #ProductsList.DataContext.DeleteCommand}"
+                                                CommandParameter="{Binding}" />
 
                                     </StackPanel>
 

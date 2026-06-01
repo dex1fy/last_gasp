@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C0F928A-B28D-D207-D239-598F22CCD0B7}|app\\app.csproj|c:\\users\\arzam\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C0F928A-B28D-D207-D239-598F22CCD0B7}|app\\app.csproj|solutionrelative:app\\viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C0F928A-B28D-D207-D239-598F22CCD0B7}|app\\app.csproj|c:\\users\\arzam\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\viewmodels\\managerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C0F928A-B28D-D207-D239-598F22CCD0B7}|app\\app.csproj|solutionrelative:app\\viewmodels\\managerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C0F928A-B28D-D207-D239-598F22CCD0B7}|app\\app.csproj|c:\\users\\arzam\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\views\\managerview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{6C0F928A-B28D-D207-D239-598F22CCD0B7}|app\\app.csproj|solutionrelative:app\\views\\managerview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C0F928A-B28D-D207-D239-598F22CCD0B7}|app\\app.csproj|c:\\users\\arzam\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\views\\managerview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C0F928A-B28D-D207-D239-598F22CCD0B7}|app\\app.csproj|solutionrelative:app\\views\\managerview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6C0F928A-B28D-D207-D239-598F22CCD0B7}|app\\app.csproj|c:\\users\\arzam\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\views\\adminview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{6C0F928A-B28D-D207-D239-598F22CCD0B7}|app\\app.csproj|solutionrelative:app\\views\\adminview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C0F928A-B28D-D207-D239-598F22CCD0B7}|app\\app.csproj|c:\\users\\arzam\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C0F928A-B28D-D207-D239-598F22CCD0B7}|app\\app.csproj|solutionrelative:app\\viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,65 +26,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ManagerView.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\Views\\ManagerView.axaml.cs",
-              "RelativeDocumentMoniker": "app\\Views\\ManagerView.axaml.cs",
-              "ToolTip": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\Views\\ManagerView.axaml.cs",
-              "RelativeToolTip": "app\\Views\\ManagerView.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T18:22:36.047Z",
+              "DocumentIndex": 0,
+              "Title": "AdminView.axaml",
+              "DocumentMoniker": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\Views\\AdminView.axaml",
+              "RelativeDocumentMoniker": "app\\Views\\AdminView.axaml",
+              "ToolTip": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\Views\\AdminView.axaml*",
+              "RelativeToolTip": "app\\Views\\AdminView.axaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-01T21:25:30.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ManagerViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\ViewModels\\ManagerViewModel.cs",
-              "RelativeDocumentMoniker": "app\\ViewModels\\ManagerViewModel.cs",
-              "ToolTip": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\ViewModels\\ManagerViewModel.cs",
-              "RelativeToolTip": "app\\ViewModels\\ManagerViewModel.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwFUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T18:21:17.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ManagerView.axaml",
-              "DocumentMoniker": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\Views\\ManagerView.axaml",
-              "RelativeDocumentMoniker": "app\\Views\\ManagerView.axaml",
-              "ToolTip": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\Views\\ManagerView.axaml*",
-              "RelativeToolTip": "app\\Views\\ManagerView.axaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-01T18:20:02.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "AdminViewModel.cs",
               "DocumentMoniker": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\ViewModels\\AdminViewModel.cs",
               "RelativeDocumentMoniker": "app\\ViewModels\\AdminViewModel.cs",
-              "ToolTip": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\ViewModels\\AdminViewModel.cs",
-              "RelativeToolTip": "app\\ViewModels\\AdminViewModel.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADwvxMAAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\ViewModels\\AdminViewModel.cs*",
+              "RelativeToolTip": "app\\ViewModels\\AdminViewModel.cs*",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAuwG8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T11:18:15.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminView.axaml",
-              "DocumentMoniker": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\Views\\AdminView.axaml",
-              "RelativeDocumentMoniker": "app\\Views\\AdminView.axaml",
-              "ToolTip": "C:\\Users\\arzam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\exxx\\app\\app\\Views\\AdminView.axaml",
-              "RelativeToolTip": "app\\Views\\AdminView.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-01T11:06:19.213Z",
               "EditorCaption": ""
             }
           ]
