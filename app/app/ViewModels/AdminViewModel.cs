@@ -126,6 +126,12 @@ namespace app.ViewModels
                 .Include(p => p.Category)
                 .ToList();
         }
+
+        public void Edit(Product product)
+        {
+            
+            MainWindowViewModel.Instance.PageSwitcher = new EditViewModel(product);
+        }
     }
 }
 

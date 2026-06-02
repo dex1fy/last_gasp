@@ -102,6 +102,10 @@
                                                 Command="{Binding #ProductsList.DataContext.DeleteCommand}"
                                                 CommandParameter="{Binding}" />
 
+                                         <Button Content="Редактировать"
+                                                Command="{Binding #ProductsList.DataContext.Edit}"
+                                                CommandParameter="{Binding}"/>
+
                                     </StackPanel>
 
 

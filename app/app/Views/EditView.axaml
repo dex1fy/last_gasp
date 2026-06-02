@@ -2,11 +2,129 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewmodels="using:app.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="app.Views.EditView"
-             xmlns:vm="using:app.ViewModels"
-             x:DataType="vm:EditViewModel">
+             xmlns:vm="app.ViewModels"
+             x:DataType="viewmodels:EditViewModel">
+
+     <ScrollViewer>
+        <StackPanel Margin="10" Spacing="10" HorizontalAlignment="Center">
+
+            <TextBlock Text="Редактировать товар"
+                       Width="780"
+                       TextAlignment="Center"
+                       FontSize="20"
+                       FontWeight="Bold" >
+            </TextBlock>
+
+            <ComboBox ItemsSource="{Binding Type}"
+                      SelectedItem="{Binding AddProduct.ProductType}"
+                      PlaceholderText="Тип обуви"
+                      Width="780">
+
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}" />
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+
+            </ComboBox>
+
+            <ComboBox PlaceholderText="Единица измерения"
+                      Width="780"
+                      ItemsSource="{Binding Units}"
+                      SelectedItem="{Binding AddProduct.Unit}">
+
+                      <ComboBox.ItemTemplate>
+                          <DataTemplate>
+                              <TextBlock Text="{Binding Name}" />
+                          </DataTemplate>
+                      </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <ComboBox PlaceholderText="Поставщик"
+                      Width="780"
+                      ItemsSource="{Binding Suppliers}"
+                      SelectedItem="{Binding AddProduct.Supplier}">
+
+                <ComboBox.ItemTemplate>
+                          <DataTemplate>
+                              <TextBlock Text="{Binding Name}" />
+                          </DataTemplate>
+                      </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <ComboBox PlaceholderText="Производитель"
+                      Width="780"
+                      ItemsSource="{Binding Manufacturers}"
+                      SelectedItem="{Binding AddProduct.Manufacturer}">
+
+                <ComboBox.ItemTemplate>
+                          <DataTemplate>
+                              <TextBlock Text="{Binding Name}" />
+                          </DataTemplate>
+                      </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <ComboBox PlaceholderText="Категория"
+                      Width="780"
+                      ItemsSource="{Binding Categories}"
+                      SelectedItem="{Binding AddProduct.Category}">
+
+                <ComboBox.ItemTemplate>
+                          <DataTemplate>
+                              <TextBlock Text="{Binding Name}" />
+                          </DataTemplate>
+                      </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <NumericUpDown Watermark="Цена"
+                           Minimum="0"
+                           Increment="1"
+                           Width="780"
+                           Value="{Binding AddProduct.Price}">
+            </NumericUpDown>
+
+            <NumericUpDown Watermark="Скидка"
+                           Minimum="0"
+                           Increment="1"
+                           Width="780"
+                           Value="{Binding AddProduct.CurrentDiscount}">
+            </NumericUpDown>
+
+            <NumericUpDown Watermark="Остаток на складе"
+                           Minimum="0"
+                           Increment="1"
+                           Width="780"
+                           Value="{Binding AddProduct.StockQuantity}">
+            </NumericUpDown>
+
+            <TextBox Watermark="Описание"
+                     Width="780"
+                     TextWrapping="Wrap"
+                     AcceptsReturn="True"
+                     Text="{Binding AddProduct.Description}">
+            </TextBox>
 
 
+            <Button Content="Сохранить"
+                    HorizontalContentAlignment="Center"
+                    Width="300"
+                    Background="#7FFF00"
+                    HorizontalAlignment="Center"
+                    Command="{Binding Save}">
+            </Button>
+
+            <Button Content="Отмена"
+                    HorizontalContentAlignment="Center"
+                    Width="300"
+                    Command="{Binding Cancel}"
+                    Background="#7FFF00"
+                    HorizontalAlignment="Center">
+            </Button>
+
+        </StackPanel>
+    </ScrollViewer>
   
 </UserControl>
